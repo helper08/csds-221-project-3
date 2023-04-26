@@ -1,7 +1,7 @@
 import React from "react";
 import { DELETE, GET, POST } from "../tools/fetch";
 import requestUrl from "../tools/requestUrl";
-import { Post } from "../../server/models/Post"
+import Post from "../../shared/Posts"
 import { request } from "http";
 
 
