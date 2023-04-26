@@ -5,7 +5,7 @@ import { BrowserRouter, RouterProvider, createBrowserRouter } from 'react-router
 import { StaticRouter } from 'react-router-dom/server';
 
 async function start() {
-
+  console.log("bruh");
   const router = createBrowserRouter([
     {
       path: "/",
