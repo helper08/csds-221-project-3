@@ -33,7 +33,6 @@
   },
   "description": "Full Stack Project for CSDS 221",
   "main": "src/index.tsx",
-  "homepage": "https://helper08.github.io/csds-221-project-3",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
