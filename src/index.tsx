@@ -2,7 +2,7 @@ import ReactDOM from 'react-dom/client';
 import Root from './client/components/Root';
 import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
-import { StaticRouter } from 'react-router-dom';
+import { StaticRouter } from 'react-router-dom/server';
 
 async function start() {
     const root = ReactDOM.createRoot(
@@ -11,7 +11,7 @@ async function start() {
   
     root.render(
       <React.StrictMode>
-        <StaticRouter>
+        <StaticRouter location="/">
           <Root />
         </StaticRouter>
       </React.StrictMode>
