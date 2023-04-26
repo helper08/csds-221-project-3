@@ -40,7 +40,7 @@
     "dev": "concurrently --kill-others \"npm run start-client-dev\" \"npm run start-server-dev\"",
     "build-client": "cross-env BUILD_PATH=builds/client react-scripts --openssl-legacy-provider build",
     "build-server": "cd src && cd server && tsc --build",
-    "build": "npm run build-client && npm run build-server",
+    "build": "npm run --openssl-legacy-provider build",
     "start-server": "node ./builds/server/server/server.js",
     "start-server-local": "concurrently \"npm run start-server\" \"start http://localhost:8000\"",
     "start-local": "npm install && npm run build && npm run start-server-local",
