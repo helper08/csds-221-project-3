@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.body-css {
+    background: lavender;
+}
+
+.submit-button {
+    transition-duration: 0.2s;
+    background-color: green;
+    color: white;
+    margin-top: .5vh;
+    border-color: black;
+    border-width: 2px;
+    border-radius: 8px;
+    padding: .75vh;
+    width: 25%;
+}
+
+.submit-button-disabled {
+    background-color: grey;
+    color: black;
+    margin-top: .5vh;
+    border-color: black;
+    border-width: 2px;
+    border-radius: 8px;
+    padding: .75vh;
+    width: 25%;
+}
+
+.submit-button:hover {
+    background-color: white;
+    color: green;
+    border-color: green;
+}
+
+.delete-button {
+    transition-duration: 0.2s;
+    background-color: red;
+    color: black;
+    margin-bottom: 7px;
+    border-radius: 6px;
+    width: 30px;
+  }
+  
+  .delete-button:hover {
+    background-color: darkred;
+    color: white;
+  }
+
+.box {
+    width: 70%;
+    max-width: 500px;
+    text-align: center;
+    margin: auto;
+    margin-top: 4vh;
+    border-style: solid;
+    border-color: darkslateblue;
+    border-radius: 8px;
+    padding: 2vh;
+    background-color: powderblue
+}
+
+.chat {
+    position: relative;
+    overflow-wrap: break-word;
+    background-color: azure;
+    border-color: cadetblue;
+    border-style: solid;
+    border-radius: 8px;
+}
+
+.chat:before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 10px solid transparent;
+    border-right: 15px solid cadetblue;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    right: 100%;
+    top: 2.5px;
+}
+
+.chat:after {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 10px solid transparent;
+    border-right: 12px solid azure;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    right: calc(100% - 1px);
+    top: 2.5px;
+}
+
+.text-input {
+    margin-bottom: 2vh;
+    font-weight: bold;
+    display: inline-block;
+    width: 100%;
+}
+
+.text-input>input {
+    max-width: 300px;
+    background-color: white;
+}
+
+.text-input>label {
+    font-size: max(min(2vh, 20px), 15px);
+}
+
+.post-box {
+    text-align: center;
+    margin: auto;
+    margin-bottom: 2vh;
+    border-style: solid;
+    border-color: cornflowerblue;
+    border-radius: 4px;
+    padding: 1vh;
+}
+
+.post-date {
+    font-size: .9rem !important;
+}
+
+.poster {
+    background-color: aquamarine;
+    border-radius: 8px;
+}
