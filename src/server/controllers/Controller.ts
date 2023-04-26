@@ -1,5 +1,7 @@
 import express from "express";
 import { getPosts, createPost, deletePost } from "../business/post";
+import path from "path";
+import STATIC_PATH from "../tools/static-path";
 
 const router = express.Router();
 
@@ -32,6 +34,11 @@ router.delete("/delete-post", async function (req, res) {
         return res.status(400).json({ message: "Could not delete post" })
     }
 
+})
+
+router.get("*", function (req, res) {
+    let file = path.join(STATIC_PATH, 'index.html');
+    res.sendFile(file);
 })
 
 export default router;
