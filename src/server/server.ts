@@ -19,7 +19,7 @@ app.use(cors());
 app.use(express.json());
 app.use(express.static(STATIC_PATH));
 app.use("/api/posts", PostController);
-app.use("/", Controller);
+app.use(Controller);
 
 const serverPort = process.env.PORT || 8000;
 const server = http.createServer(app);
