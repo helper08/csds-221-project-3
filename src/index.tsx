@@ -1,8 +1,7 @@
 import ReactDOM from 'react-dom/client';
 import Root from './client/components/Root';
 import React from 'react';
-import { BrowserRouter, RouterProvider, createBrowserRouter } from 'react-router-dom';
-import { StaticRouter } from 'react-router-dom/server';
+import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 
 async function start() {
   console.log("bruh");

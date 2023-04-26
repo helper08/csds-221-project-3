@@ -32,6 +32,7 @@
     "web-vitals": "^2.1.4"
   },
   "description": "Full Stack Project for CSDS 221",
+  "main": "index.js",
   "homepage": "https://helper08.github.io/csds-221-project-3",
   "scripts": {
     "predeploy": "npm run build",
