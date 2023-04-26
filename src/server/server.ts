@@ -7,6 +7,7 @@ const cors = require('cors');
 require('dotenv').config()
 import { AppDataSource } from "./tools/db-connect";
 import { createPost } from "./business/post";
+import PostController from "./controllers/PostController";
 import Controller from "./controllers/Controller";
 
 const ENV = process.env.NODE_ENV || Environments.DEVELOPMENT;
@@ -17,7 +18,8 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 app.use(express.static(STATIC_PATH));
-app.use("/api/posts", Controller);
+app.use("/api/posts", PostController);
+app.use("/", Controller);
 
 const serverPort = process.env.PORT || 8000;
 const server = http.createServer(app);
