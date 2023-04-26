@@ -20,7 +20,8 @@
     "strictPropertyInitialization": false,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "preserve"
+    "jsx": "preserve",
+    "outDir": "../../build/client",
   },
   "include": [
     "src/client",
