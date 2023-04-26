@@ -26,6 +26,6 @@
     "src/client",
     "src/shared",
     "src/index.tsx",
-    "src/client/components"
+    "src/client/components",
   ]
 }

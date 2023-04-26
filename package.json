@@ -38,7 +38,7 @@
     "start-client-dev": "react-scripts --openssl-legacy-provider start",
     "start-server-dev": "nodemon ./src/server/server.ts",
     "dev": "concurrently --kill-others \"npm run start-client-dev\" \"npm run start-server-dev\"",
-    "build-client": "cross-env BUILD_PATH=builds/client react-scripts build",
+    "build-client": "cross-env BUILD_PATH=builds/client react-scripts --openssl-legacy-provider build",
     "build-server": "cd src && cd server && tsc --build",
     "build": "npm run build-client && npm run build-server",
     "start-server": "node ./builds/server/server/server.js",
