@@ -20,13 +20,11 @@
     "strictPropertyInitialization": false,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "preserve",
-    "outDir": "../../build/client",
+    "jsx": "preserve"
   },
   "include": [
     "src/client",
     "src/shared",
     "src/index.tsx",
-    "src/client/components"
   ]
 }
