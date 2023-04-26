@@ -1,6 +1,7 @@
 import ReactDOM from 'react-dom/client';
 import Root from './client/components/Root';
 import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
 
 async function start() {
     const root = ReactDOM.createRoot(
@@ -8,7 +9,11 @@ async function start() {
     );
   
     root.render(
-      <Root />
+      <React.StrictMode>
+        <BrowserRouter>
+          <Root />
+        </BrowserRouter>
+      </React.StrictMode>
     );
   }
   
