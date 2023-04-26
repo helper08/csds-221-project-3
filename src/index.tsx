@@ -11,9 +11,9 @@ async function start() {
   
     root.render(
       <React.StrictMode>
-        <StaticRouter location="/">
+        <BrowserRouter>
           <Root />
-        </StaticRouter>
+        </BrowserRouter>
       </React.StrictMode>
     );
   }
